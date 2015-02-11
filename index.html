@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Microbrew Roadtrip</title>
+</head>
+<body>
+<div class="app-container">
+    <!-- Backbone views will be appended here! -->
+</div>
+
+  <script type="text/template" data-template-name="user-input">
+    <input name="zip-code" class="zip-code" placeholder="Zip Code">
+      <a href="#brewery/<%= zip %>">SEARCH</a>
+  </script>
+
+  <script type="text/template" data-template-name="display-results">
+    <div class="brewery-container">
+    <img src="<%= brewery.pic %>">
+    </div>
+    <span class="title"><%= brewery.name %> "was selected from zip code <%= brewery.zipcode %>!"</span>
+  </script>
+
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+    <script type="text/javascript" src="bower_components/backbone/backbone.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
+
+
+<!-- <script type="text/template" id="brewery-list-template">
+  <a href="#results">results</a>
+  <a href="#barcrawl">barcrawl</a>
+  <ul>
+    <% _.each(breweries, function(brew, index){ %>
+       <li><a href="#brewery/<%= index %>"><%= brewery.website %></a></li>
+    <% }) %>
+  </ul>
+</script>
+
+<script type="text/template" id="brewery-template">
+  <h1><%= brewery %></h1>
+  <h2><%= website %></h2>
+</script> -->
